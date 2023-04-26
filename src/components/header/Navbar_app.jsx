@@ -73,12 +73,7 @@ export const Navbar_app = () => {
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center md:ml-6">
                   {/* modal */}
-                  {isModalVisible && (
-                    <Modal title="Login" onClose={handleCloseModal}>
-                      {/* contenido del modal */}
-                      <Login onClose={handleCloseModal}></Login>
-                    </Modal>
-                  )}
+   
                 </div>
               </div>
               <div className="-mr-2 flex md:hidden">

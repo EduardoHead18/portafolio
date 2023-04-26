@@ -1,4 +1,5 @@
 import TypeIt from "typeit-react";
+import Image from "next/image";
 export const Section_Who_Im = () => {
   return (
     <>
@@ -17,7 +18,7 @@ export const Section_Who_Im = () => {
             </p>
           </div>
 
-          <img
+          <Image
             className="hidden md:block rounded-full w-50 h-50 md:w-300 md:h-300 "
             src={"assets/ft1.jpg"}
             alt=""
