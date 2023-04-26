@@ -1,14 +1,11 @@
 import { Layaut } from '@/components/Layaut/Layaut'
-import { Section_Projects } from '@/components/body/Section_Projects'
 import { Section_Who_Im } from '@/components/body/Section_Who_Im'
 import React from 'react'
 
-export default function index() {
+export default function Contacto() {
   return (
     <Layaut>
-      <Section_Who_Im></Section_Who_Im>
-      <Section_Projects></Section_Projects>
+      o
     </Layaut>
-
   )
 }
