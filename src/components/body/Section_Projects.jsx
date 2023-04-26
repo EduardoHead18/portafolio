@@ -27,7 +27,7 @@ export const Section_Projects = () => {
                       Aplicación de venta de autos que permite agendar citas. El
                       frontend fue desarrollado utilizando Next js y Tailwind
                       CSS, mientras que el backend se construyó con Node.js,
-                      MongoDB y JWT."
+                      MongoDB y JWT.
                     </a>
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">#Next Js #Node Js #MogoDb</p>
