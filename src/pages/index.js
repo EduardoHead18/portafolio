@@ -1,14 +1,16 @@
-import { Layaut } from '@/components/Layaut/Layaut'
-import { Section_Projects } from '@/components/body/Section_Projects'
-import { Section_Who_Im } from '@/components/body/Section_Who_Im'
-import React from 'react'
+import { Layaut } from "@/components/Layaut/Layaut";
+import { SectionProjects } from "@/components/body/SectionProjects";
+import { SectionWhoIm } from "@/components/body/SectionWhoIm";
+
+import React from "react";
 
 export default function index() {
-  return (
+  /** 
     <Layaut>
-      <Section_Who_Im></Section_Who_Im>
-      <Section_Projects></Section_Projects>
+      <SectionWhoIm className="#section-1"></SectionWhoIm>
+      <SectionProjects className="#se"></SectionProjects>
     </Layaut>
-
-  )
+    */
+  //el componente que se renderiza es el navbar, el navbar tiene a todos los componentes como hijos, ya que es una spa
+  return <Layaut></Layaut>;
 }

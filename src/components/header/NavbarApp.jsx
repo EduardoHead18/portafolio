@@ -1,9 +1,14 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import { SectionWhoIm } from "../body/SectionWhoIm";
+import { scrollConfig } from "@/utils/ScrollReveal";
+import { SectionProjects } from "../body/SectionProjects";
+import { Skills } from "../body/Skills";
+import { Contact } from "../body/Contact";
 
-export const Navbar_app = () => {
+export const NavbarApp = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isActive, setIsActive] = useState(router.pathname);
@@ -21,10 +26,13 @@ export const Navbar_app = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    scrollConfig();
+  }, []);
   return (
     <>
-      <div className="min-h-full  sticky top-0 opacity-60 z-50 ">
-        <nav className="bg-slate-900">
+      <div className="min-h-full sticky top-0 opacity-90 z-50 ">
+        <nav className="bg-slate-900 transform ">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between md:justify-center">
               <div className="flex items-center">
@@ -38,32 +46,44 @@ export const Navbar_app = () => {
                       className={`${
                         isActive == "/"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium"
-                      } text-white px-3 py-2 text-lg`}
+                          : "font-medium text-white"
+                      }  px-3 py-2 text-lg`}
                     >
                       Inicio
                     </Link>
+                    {/** menu Skills */}
+                    <Link
+                      href={"#section-2"}
+                      onClick={() => setIsActive("#section-2")}
+                      className={`${
+                        isActive == "#section-2"
+                          ? "text-purple-600 font-bold border-b-2"
+                          : "font-medium  text-white    "
+                      } px-3 py-2`}
+                    >
+                      Skills
+                    </Link>
                     {/** menu proejcts */}
                     <Link
-                      href={"/projects"}
-                      onClick={() => setIsActive("/projects")}
+                      href={"#section-3"}
+                      onClick={() => setIsActive("section-3")}
                       className={`${
-                        isActive == "/projects"
+                        isActive == "section-3"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium"
-                      } text-white px-3 py-2 text-lg`}
+                          : "font-medium text-white"
+                      }  px-3 py-2 text-lg`}
                     >
                       Proyectos
                     </Link>
                     {/** menu proejcts */}
                     <Link
-                      href={"/contacto"}
-                      onClick={() => setIsActive("/contacto")}
+                      href={"#section-4"}
+                      onClick={() => setIsActive("#section-4")}
                       className={`${
-                        isActive == "/contacto"
+                        isActive == "#section-4"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium"
-                      } text-white px-3 py-2 text-lg`}
+                          : "font-medium  text-white"
+                      } px-3 py-2 text-lg`}
                     >
                       Contacto
                     </Link>
@@ -73,7 +93,6 @@ export const Navbar_app = () => {
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center md:ml-6">
                   {/* modal */}
-   
                 </div>
               </div>
               <div className="-mr-2 flex md:hidden">
@@ -82,7 +101,7 @@ export const Navbar_app = () => {
                   href="/index"
                   id="boton"
                   type="button"
-                  className="inline-flex items-center justify-center rounded-md text-black opacity-80  p-2   focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 "
+                  className="inline-flex items-center justify-center rounded-md text-purple-600 opacity-90  p-2   focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 "
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
@@ -121,6 +140,9 @@ export const Navbar_app = () => {
               </div>
             </div>
           </div>
+
+          {/**------------------------------------------------------------ */}
+
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">
               <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
@@ -129,35 +151,47 @@ export const Navbar_app = () => {
                   onClick={() => setIsActive("/")}
                   className={`${
                     isActive == "/"
-                      ? "text-gray-800 font-bold border-b-2"
-                      : "font-medium"
-                  } text-slate-800 px-3 block py-2 text-sm`}
+                      ? "text-purple-600 font-bold border-b-2"
+                      : "font-medium text-white"
+                  }  px-3 block py-2 text-sm`}
                 >
                   Inicio
                 </Link>
 
                 <Link
-                  href={"/autos"}
-                  onClick={() => setIsActive("/autos")}
+                  href={"#section-2"}
+                  onClick={() => setIsActive("#section-2")}
                   className={`${
-                    isActive == "/autos"
-                      ? "text-gray-800 font-bold border-b-2"
-                      : "font-medium"
-                  } text-slate-800 px-3 block py-2 text-sm`}
+                    isActive == "#section-2"
+                      ? "text-purple-600 font-bold border-b-2"
+                      : "font-medium text-white"
+                  }  px-3 block py-2 text-sm`}
                 >
-                  Autos
+                  Skills
                 </Link>
 
                 <Link
-                  href={"/citas"}
-                  onClick={() => setIsActive("/citas")}
+                  href={"#section-3"}
+                  onClick={() => setIsActive("#section-3")}
                   className={`${
-                    isActive == "/citas"
-                      ? "text-gray-800 font-bold border-b-2"
-                      : "font-medium"
-                  } text-slate-800 block px-3 py-2 text-sm`}
+                    isActive == "#section-3"
+                      ? "text-purple-600 font-bold border-b-2"
+                      : "font-medium text-white"
+                  }  block px-3 py-2 text-sm`}
                 >
-                  Citas
+                  Proyectos
+                </Link>
+
+                <Link
+                  href={"#section-4"}
+                  onClick={() => setIsActive("#section-4")}
+                  className={`${
+                    isActive == "#section-4"
+                      ? "text-purple-600 font-bold border-b-2"
+                      : "font-medium text-white"
+                  }  block px-3 py-2 text-sm`}
+                >
+                  Contacto
                 </Link>
 
                 {/**text */}
@@ -171,6 +205,26 @@ export const Navbar_app = () => {
         <main>
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"></div>
         </main>
+      </div>
+
+      {/**componentes que se renderizan con el navbar-section de la pagina index (spa) */}
+      <div className="ml-10 mr-10 md:ml-20 md:mr-20">
+        <div className="animacion">
+          <SectionWhoIm></SectionWhoIm>
+        </div>
+
+        <div className="animacion" id="section-2">
+          <Skills></Skills>
+        </div>
+
+        <div className="animacion" id="section-3">
+          <SectionProjects></SectionProjects>
+        </div>
+
+        <div className="animacion" id="section-4">
+          <Contact></Contact>
+        </div>
+
       </div>
     </>
   );
