@@ -8,7 +8,7 @@ export const Layaut = ({ children }) => {
     <>
       <Head>
         <title>Eduardo Hm</title>
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/scrollreveal" async/>
       </Head>
       <div className="bg-slate-900">
         {/**render del navbar */}
