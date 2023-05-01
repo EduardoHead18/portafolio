@@ -10,7 +10,7 @@ export const SectionWhoIm = () => {
   return (
     <>
       <div className="md:mt-10  md:h-screen">
-        <TypeIt className="text-lg font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl ">
+        <TypeIt className="text-2xl font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl ">
           Hola Mundo, Soy Eduardo 👋!
         </TypeIt>
         <div className="flex flex-col md:flex-row md:mt-5  ">
@@ -39,7 +39,7 @@ export const SectionWhoIm = () => {
           </div>
         </div>
 
-        <div className="mt-16 animate-pulse">
+        <div className="text-center md:text-left mt-16 animate-pulse">
           {" "}
           <a
             className="bg-purple-600 p-2 rounded-md text-xl md:mt-9 px-7 hover:bg-purple-400 shadow-xl "
