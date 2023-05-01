@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <title>Portafolio</title>
         
-      <script async src="https://unpkg.com/scrollreveal"/>
+
   
       <Head />
       <body>
