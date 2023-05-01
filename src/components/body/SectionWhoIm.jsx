@@ -29,9 +29,25 @@ export const SectionWhoIm = () => {
 
           <div className="animacion-right hidden  md:block  w-300 ">
             <div className="rounded-full overflow-hidden ">
-              <Image src={"/assets/ft1.jpg"} alt="" width={1200} height={900} />
+              <Image
+                src={"/assets/ft1.jpg"}
+                alt="profile"
+                width={1200}
+                height={900}
+              />
             </div>
           </div>
+        </div>
+
+        <div className="mt-16 animate-pulse">
+          {" "}
+          <a
+            className="bg-purple-600 p-2 rounded-md text-xl md:mt-9 px-7 hover:bg-purple-400 shadow-xl "
+            href="https://drive.google.com/file/d/1rgiaVaa0IumDJm8ZpV4WWP72iKS5np2i/view?usp=drivesdk"
+            target="_blank"
+          >
+            Ver CV
+          </a>
         </div>
       </div>
     </>

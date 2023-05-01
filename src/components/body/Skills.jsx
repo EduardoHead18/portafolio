@@ -14,6 +14,7 @@ export const Skills = () => {
             src={"/assets/skills/react.jpg"}
             width={80}
             height={80}
+            alt="react js"
           ></Image>
           <p className="text-center">React js</p>
         </div>
@@ -24,6 +25,7 @@ export const Skills = () => {
             src={"/assets/skills/node.jpg"}
             width={80}
             height={80}
+            alt="node js"
           ></Image>
           <p className="text-center">Node js</p>
         </div>
@@ -34,6 +36,7 @@ export const Skills = () => {
             src={"/assets/skills/next.jpg"}
             width={80}
             height={80}
+            alt="next js"
           ></Image>
           <p className="text-center">Next js</p>
         </div>
@@ -44,6 +47,7 @@ export const Skills = () => {
             src={"/assets/skills/java.jpg"}
             width={80}
             height={80}
+            alt="java"
           ></Image>
           <p className="text-center">Java</p>
         </div>
@@ -54,6 +58,7 @@ export const Skills = () => {
             src={"/assets/skills/laravel.jpg"}
             width={80}
             height={80}
+            alt="laravel"
           ></Image>
           <p className="text-center">Laravel</p>
         </div>
@@ -64,6 +69,7 @@ export const Skills = () => {
             src={"/assets/skills/tailwind.jpg"}
             width={80}
             height={80}
+            alt="tailwind css"
           ></Image>
           <p className="text-center">Tailwind css</p>
         </div>

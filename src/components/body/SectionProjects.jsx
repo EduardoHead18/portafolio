@@ -6,7 +6,7 @@ export const SectionProjects = () => {
     scrollConfig();
   }, []);
   return (
-    <div className="">
+    <div className="mt-28">
       <h1 className="animacion text-lg text-center rounded-md text-white px-3 md:text-2xl font-semibold">
         Proyectos
       </h1>
@@ -20,7 +20,7 @@ export const SectionProjects = () => {
                   width={500}
                   height={200}
                   src={"/assets/img-projects/bamp2.jpg"}
-                  alt="Front of men&#039;s Basic Tee in black."
+                  alt="bamp project"
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 ></Image>
               </div>
@@ -67,7 +67,7 @@ export const SectionProjects = () => {
                   width={500}
                   height={200}
                   src={"/assets/img-projects/api.jpg"}
-                  alt="Front of men&#039;s Basic Tee in black."
+                  alt="api image"
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 ></Image>
               </div>
@@ -116,7 +116,7 @@ export const SectionProjects = () => {
                   width={500}
                   height={200}
                   src={"/assets/img-projects/bhc.jpg"}
-                  alt="Front of men&#039;s Basic Tee in black."
+                  alt="black honey coffee"
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 ></Image>
               </div>

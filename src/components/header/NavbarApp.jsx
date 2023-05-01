@@ -59,7 +59,7 @@ export const NavbarApp = () => {
                         isActive == "#section-2"
                           ? "text-purple-600 font-bold border-b-2"
                           : "font-medium  text-white    "
-                      } px-3 py-2`}
+                      } px-3 py-2 text-lg`}
                     >
                       Skills
                     </Link>
@@ -221,11 +221,12 @@ export const NavbarApp = () => {
           <SectionProjects></SectionProjects>
         </div>
 
-        <div className="animacion" id="section-4">
-          <Contact></Contact>
-        </div>
+       
 
       </div>
+      <div className="animacion" id="section-4">
+          <Contact></Contact>
+        </div>
     </>
   );
 };
