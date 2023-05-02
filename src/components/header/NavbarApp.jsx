@@ -145,13 +145,13 @@ export const NavbarApp = () => {
 
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">
-              <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+              <div className='space-y-1 text-center pt-2 pb-3 sm:px-3 transform transition ease-in-out delay-150 hover:-translate-y-1 duration-100 '>
                 <Link
                   href={"/"}
                   onClick={() => setIsActive("/")}
                   className={`${
                     isActive == "/"
-                      ? "text-purple-600 font-bold border-b-2"
+                      ? "text-purple-600 font-bold"
                       : "font-medium text-white"
                   }  px-3 block py-2 text-sm`}
                 >
@@ -163,7 +163,7 @@ export const NavbarApp = () => {
                   onClick={() => setIsActive("#section-2")}
                   className={`${
                     isActive == "#section-2"
-                      ? "text-purple-600 font-bold border-b-2"
+                      ? "text-purple-600 font-bold"
                       : "font-medium text-white"
                   }  px-3 block py-2 text-sm`}
                 >
@@ -175,7 +175,7 @@ export const NavbarApp = () => {
                   onClick={() => setIsActive("#section-3")}
                   className={`${
                     isActive == "#section-3"
-                      ? "text-purple-600 font-bold border-b-2"
+                      ? "text-purple-600 font-bold"
                       : "font-medium text-white"
                   }  block px-3 py-2 text-sm`}
                 >
@@ -187,7 +187,7 @@ export const NavbarApp = () => {
                   onClick={() => setIsActive("#section-4")}
                   className={`${
                     isActive == "#section-4"
-                      ? "text-purple-600 font-bold border-b-2"
+                      ? "text-purple-600 font-bold"
                       : "font-medium text-white"
                   }  block px-3 py-2 text-sm`}
                 >

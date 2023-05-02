@@ -9,7 +9,7 @@ export const SectionWhoIm = () => {
   }, []);
   return (
     <>
-      <div className="md:mt-10  md:h-screen">
+      <div className="md:mt-10  md:h-screen lg:h-67">
         <TypeIt className="text-2xl font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl ">
           Hola Mundo, Soy Eduardo 👋!
         </TypeIt>
@@ -43,7 +43,7 @@ export const SectionWhoIm = () => {
           {" "}
           <a
             className="bg-purple-600 p-2 rounded-md text-xl md:mt-9 px-7 hover:bg-purple-400 shadow-xl "
-            href="https://drive.google.com/file/d/1rgiaVaa0IumDJm8ZpV4WWP72iKS5np2i/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1LX5ru5OiL721OkBfPEylqUEBHjA3pieJ/view"
             target="_blank"
           >
             Ver CV

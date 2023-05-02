@@ -50,7 +50,7 @@ export const SectionProjects = () => {
                     </span>
                     <span className="bg-violet-600 p-2 rounded-full">#Ssr</span>
                     <span className="bg-violet-600 p-2 rounded-full">
-                      #TailwindCss
+                      #Tailwind
                     </span>
                     <span className="bg-violet-600 p-2 rounded-full">
                       #ReactJs
