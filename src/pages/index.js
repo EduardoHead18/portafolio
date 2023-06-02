@@ -5,6 +5,7 @@ import { SectionWhoIm } from "@/components/body/SectionWhoIm";
 import React from "react";
 
 export default function index() {
+  //comentario
   /** 
     <Layaut>
       <SectionWhoIm className="#section-1"></SectionWhoIm>
