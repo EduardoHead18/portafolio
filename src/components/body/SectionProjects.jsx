@@ -80,7 +80,7 @@ const SecondProject = ({ mode, style }) => {
     >
       <Image
      
-        src={"/assets/img-projects/bamp_autos_new.png"}
+        src={"/assets/img-projects/bamp_autos.png"}
         width={600}
         height={400}
         alt="ok"
