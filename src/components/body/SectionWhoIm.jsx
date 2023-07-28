@@ -1,10 +1,9 @@
 import TypeIt from "typeit-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { constStateRedux } from "@/utils/constReduxState";
-
+import { useReduxState } from "@/custom/useReduxState";
 const ContenLeft = () => {
-  const mode = constStateRedux();
+  const mode = useReduxState();
   return (
     <div>
       <TypeIt className="text-2xl font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl lg:text-4xl lg:w-1/2">

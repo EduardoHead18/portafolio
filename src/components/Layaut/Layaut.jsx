@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { NavbarApp } from "../header/NavbarApp";
-import { constStateRedux } from "@/utils/constReduxState";
 import {motion} from "framer-motion";
+import { useReduxState } from "@/custom/useReduxState";
 
 export const Layaut = ({ children }) => {
-  const mode = constStateRedux();  
+  const mode = useReduxState();  
   return (
     <>
       <Head>

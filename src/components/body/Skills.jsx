@@ -1,10 +1,10 @@
-import { constStateRedux } from "@/utils/constReduxState";
 import Image from "next/image";
 import React from "react";
+import { useReduxState } from "@/custom/useReduxState";
 
 export const Skills = () => {
   //state redux
-  const mode = constStateRedux();
+  const mode = useReduxState();
   const skillsData = [
     {
       imageUri: "/assets/skills/react.jpg",

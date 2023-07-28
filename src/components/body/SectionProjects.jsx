@@ -1,10 +1,10 @@
-import { constStateRedux } from "@/utils/constReduxState";
+import { useReduxState } from "@/custom/useReduxState";
 import Image from "next/image";
 
 const coverStyle ={objectFit:"cover"}
 
 export const SectionProjects = () => {
-  const mode = constStateRedux();
+  const mode = useReduxState();
   return (
     <>
       <h1

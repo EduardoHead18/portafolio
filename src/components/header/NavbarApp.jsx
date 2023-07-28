@@ -9,8 +9,7 @@ import { Contact } from "../body/Contact";
 import {CiLight, CiDark} from "react-icons/ci"
 import { useDispatch } from "react-redux";
 import { changeState } from "@/redux/futures/modeSlice";
-import { constStateRedux } from "@/utils/constReduxState";
-
+import { useReduxState } from "@/custom/useReduxState";
 export const NavbarApp = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +17,7 @@ export const NavbarApp = () => {
 
   //redux functions
   const dispatch = useDispatch()
-  const mode = constStateRedux()
+  const mode = useReduxState()
 
   const darkMode = () => {
     dispatch(changeState())

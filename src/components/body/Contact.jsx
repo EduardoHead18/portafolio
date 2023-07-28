@@ -1,9 +1,9 @@
-import { constStateRedux } from "@/utils/constReduxState";
 import Image from "next/image";
 import React from "react";
+import { useReduxState } from "@/custom/useReduxState";
 
 export const Contact = () => {
-  const mode = constStateRedux();
+  const mode = useReduxState();
   return (
     <div className="h-screen  flex flex-col justify-between">
       <h1
