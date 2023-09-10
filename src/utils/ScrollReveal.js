@@ -1,5 +1,5 @@
 /**
- *  const scrollConfig = () => {
+ * const scrollConfig = () => {
   //bottom animation
   ScrollReveal().reveal(".animacion", {
     delay: 200,

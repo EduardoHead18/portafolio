@@ -6,9 +6,9 @@ const ContenLeft = () => {
   const mode = useReduxState();
   return (
     <div>
-      <TypeIt className="text-2xl font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl lg:text-4xl lg:w-1/2">
+      <div className="text-2xl font-bold bg-red-400 rounded-md text-white px-3 py-2 md:text-3xl lg:text-4xl lg:w-2/3">
         Hola Mundo, Soy Eduardo 👋!
-      </TypeIt>
+      </div>
 
       <div>
         <p

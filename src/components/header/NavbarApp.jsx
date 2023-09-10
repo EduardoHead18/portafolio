@@ -9,6 +9,8 @@ import { CiLight, CiDark } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { changeState } from "@/redux/futures/modeSlice";
 import { useReduxState } from "@/custom/useReduxState";
+import { scrollConfig } from "@/utils/ScrollReveal";
+import { RevealWrapper } from "next-reveal";
 
 export const NavbarApp = () => {
   const router = useRouter();
@@ -24,7 +26,7 @@ export const NavbarApp = () => {
   };
 
   //style color
-  const fontMenuColor = `font-medium ${mode ? "text-white" : "text-zinc-900"}`;
+  const fontDarkMode = `font-medium ${mode ? "text-white" : "text-zinc-900"}`;
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -51,7 +53,7 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "/"
                           ? "text-purple-600 font-bold border-b-2"
-                          : fontMenuColor
+                          : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
                       Inicio
@@ -63,7 +65,7 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "#section-2"
                           ? "text-purple-600 font-bold border-b-2"
-                          : fontMenuColor
+                          : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
                       Skills
@@ -75,7 +77,7 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "section-3"
                           ? "text-purple-600 font-bold border-b-2"
-                          : fontMenuColor
+                          : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
                       Proyectos
@@ -87,7 +89,7 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "#section-4"
                           ? "text-purple-600 font-bold border-b-2"
-                          : fontMenuColor
+                          : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
                       Contacto
@@ -171,9 +173,7 @@ export const NavbarApp = () => {
                   href={"/"}
                   onClick={() => setIsActive("/")}
                   className={`${
-                    isActive == "/"
-                      ? "text-purple-600 font-bold"
-                      : fontMenuColor
+                    isActive == "/" ? "text-purple-600 font-bold" : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
                   Inicio
@@ -185,7 +185,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-2"
                       ? "text-purple-600 font-bold"
-                      : fontMenuColor
+                      : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
                   Skills
@@ -197,7 +197,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-3"
                       ? "text-purple-600 font-bold"
-                      : fontMenuColor
+                      : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
                   Proyectos
@@ -209,7 +209,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-4"
                       ? "text-purple-600 font-bold"
-                      : fontMenuColor
+                      : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
                   Contacto
@@ -228,19 +228,35 @@ export const NavbarApp = () => {
         </main>
       </div>
 
-      {/**components that are rendered with the navbar-section of the page index (eng) (spa) */}
+      {/**components that are rendered with the navbar-section of the page index (Landing page) (spa) */}
       {/**Here the margin x of the page is defined */}
-      <div className="mx-5  sm:mx-5 md:mx-24 2xl:mx-96">
-        <div className="animation">
-          <SectionWhoIm></SectionWhoIm>
+      <div className="mx-5 sm:mx-5 md:mx-24 2xl:mx-96">
+        <SectionWhoIm></SectionWhoIm>
+
+        <div id="section-2">
+          <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="bottom"
+            delay={100}
+            duration={2000}
+            distance="1000px"
+            opacity={0}
+          >
+            <Skills></Skills>
+          </RevealWrapper>
         </div>
 
-        <div className="animacion" id="section-2">
-          <Skills></Skills>
-        </div>
-
-        <div className="animacion" id="section-3">
+        <div id="section-3">
+        <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="bottom"
+            delay={100}
+            duration={2000}
+            distance="500px"
+            opacity={0}
+          >
           <SectionProjects></SectionProjects>
+          </RevealWrapper>
         </div>
       </div>
       <div className="animacion" id="section-4">

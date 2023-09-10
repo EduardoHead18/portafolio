@@ -1,7 +1,7 @@
 import { useReduxState } from "@/custom/useReduxState";
 import Image from "next/image";
 
-const coverStyle ={objectFit:"cover"}
+const coverStyle = { objectFit: "cover" };
 
 export const SectionProjects = () => {
   const mode = useReduxState();
@@ -47,8 +47,8 @@ const FirstProject = ({ mode, style }) => {
           style={{ fontFamily: "'Hind Madurai' ,sans-serif" }}
           className={mode ? "text-white" : "text-zinc-900"}
         >
-          Blog para la cafetería Black Honey Café. La página web fue creada
-          para que pudieran mostrar sus productos en internet, la cafetería se
+          Blog para la cafetería Black Honey Café. La página web fue creada para
+          que pudieran mostrar sus productos en internet, la cafetería se
           encuentra ubicada en Guadalajara Jalisco México.
         </p>
 
@@ -79,13 +79,11 @@ const SecondProject = ({ mode, style }) => {
       }`}
     >
       <Image
-     
         src={"/assets/img-projects/bamp_autos.png"}
         width={600}
         height={400}
         alt="ok"
         style={coverStyle}
-        
       ></Image>
       <div className="flex p-5 flex-col lg:mx-14 justify-between">
         <h1
@@ -102,8 +100,8 @@ const SecondProject = ({ mode, style }) => {
           Aplicación web que permite agendar citas con clientes. Cuenta con
           login y autenticación, modulo de citas para ver el estado que se
           encuentra la cita ya sea pendiente, finalizada etc. Se construyo con
-          next js para aprovechar su server side rendering y tener un mejor performance, la aplicación cuenta con consumo de api y
-          autenticación.
+          next js para aprovechar su server side rendering y tener un mejor
+          performance, la aplicación cuenta con consumo de api y autenticación.
         </p>
 
         <div className="flex flex-row mt-5 gap-5 text-zinc-500 mb-5 lg:mb-0 w-32">
