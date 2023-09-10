@@ -13,7 +13,7 @@ const ContenLeft = () => {
       <div>
         <p
           style={{ fontFamily: "'Hind Madurai' ,sans-serif" }}
-          className={`animacion-left text-xl mt-10 md:mt-20 md:text-2xl lg:text2xl opacity-90 text-justify lg:mr-44 ${mode ? "text-white":"text-zinc-900 "}`}
+          className={`animacion-left text-xl mt-10 md:mt-20 md:text-2xl lg:text2xl opacity-90  lg:mr-44 ${mode ? "text-white":"text-zinc-900 "}`}
            
         >
           Ingeniero de software en busca de nuevas oportunidades. Cuento con
@@ -47,7 +47,7 @@ const ImageSection = () => {
 export const SectionWhoIm = () => {
   return (
     <>
-      <div className="2xl:mt-10 2xl:mb-20 lg:h-67">
+      <div className="2xl:mt-14 2xl:mb-20 lg:h-67">
         <div className="flex flex-col md:flex-row md:mt-5  items-center">
           <ContenLeft></ContenLeft>
           <ImageSection></ImageSection>

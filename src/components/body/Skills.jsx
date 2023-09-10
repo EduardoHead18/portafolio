@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import {motion} from 'framer-motion'
 import { useReduxState } from "@/custom/useReduxState";
 
 export const Skills = () => {
@@ -29,7 +30,10 @@ export const Skills = () => {
   ];
 
   return (
-    <div className="pt-20 lg:pt-16">
+    <motion.div className="pt-20 lg:pt-16" animate={{
+      open:{opacity:1, x:0},
+      closed: { opacity: 0, x: "-100%" },
+    }}>
       <h1
         className={`text-lg text-center rounded-md   md:text-2xl font-bold ${
           mode ? "text-white" : "text-zinc-900"
@@ -63,6 +67,6 @@ export const Skills = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };

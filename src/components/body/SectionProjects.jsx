@@ -33,9 +33,9 @@ const FirstProject = ({ mode, style }) => {
         width={600}
         height={400}
         alt="ok"
-        style={style}
+        style={coverStyle}
       ></Image>
-      <div className="flex p-5 flex-col lg:mx-14 text-justify">
+      <div className="flex p-5 flex-col lg:mx-14 ">
         <h1
           className={`lg:text-xl font-semibold mb-5 ${
             mode ? "text-white" : "text-zinc-900"
@@ -47,9 +47,9 @@ const FirstProject = ({ mode, style }) => {
           style={{ fontFamily: "'Hind Madurai' ,sans-serif" }}
           className={mode ? "text-white" : "text-zinc-900"}
         >
-          Blog para la cafetería Black Honey. La iniciativa de este proyecto fue
-          para que pudieran mostrar sus productos por internet, la cafetería se
-          ubica en Guadalajara, Jalisco, México.
+          Blog para la cafetería Black Honey Café. La página web fue creada
+          para que pudieran mostrar sus productos en internet, la cafetería se
+          encuentra ubicada en Guadalajara Jalisco México.
         </p>
 
         <div className="flex flex-row gap-4 mt-5 text-zinc-500 mb-5 lg:mb-0">
@@ -87,7 +87,7 @@ const SecondProject = ({ mode, style }) => {
         style={coverStyle}
         
       ></Image>
-      <div className="flex p-5 flex-col lg:mx-14 text-justify justify-between">
+      <div className="flex p-5 flex-col lg:mx-14 justify-between">
         <h1
           className={`lg:text-xl font-semibold mb-5 ${
             mode ? "text-white" : "text-zinc-900"

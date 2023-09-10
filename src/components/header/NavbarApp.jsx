@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -6,26 +5,26 @@ import { SectionWhoIm } from "../body/SectionWhoIm";
 import { SectionProjects } from "../body/SectionProjects";
 import { Skills } from "../body/Skills";
 import { Contact } from "../body/Contact";
-import {CiLight, CiDark} from "react-icons/ci"
+import { CiLight, CiDark } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { changeState } from "@/redux/futures/modeSlice";
 import { useReduxState } from "@/custom/useReduxState";
+
 export const NavbarApp = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isActive, setIsActive] = useState(router.pathname);
 
   //redux functions
-  const dispatch = useDispatch()
-  const mode = useReduxState()
+  const dispatch = useDispatch();
+  const mode = useReduxState();
 
   const darkMode = () => {
-    dispatch(changeState())
-
+    dispatch(changeState());
   };
 
   //style color
-  const fontMenuColor = `font-medium ${mode ? "text-white":"text-zinc-900"}` 
+  const fontMenuColor = `font-medium ${mode ? "text-white" : "text-zinc-900"}`;
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,19 +33,25 @@ export const NavbarApp = () => {
   return (
     <>
       <div className="min-h-full sticky top-0 opacity-90 z-50 ">
-        <nav className={`transform ${mode ? "text-white bg-zinc-900":"text-zinc-900 bg-white"}`}>
+        <nav
+          className={`transform ${
+            mode ? "text-white bg-zinc-900" : "text-zinc-900 bg-white"
+          }`}
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between md:justify-center">
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
                 <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="ml-10 flex  space-x-4">
                     {/** menu Inicio */}
                     <Link
                       href={"/"}
                       onClick={() => setIsActive("/")}
                       className={`${
-                        isActive == "/" ? "text-purple-600 font-bold border-b-2" : fontMenuColor
+                        isActive == "/"
+                          ? "text-purple-600 font-bold border-b-2"
+                          : fontMenuColor
                       }  px-3 py-2 text-lg`}
                     >
                       Inicio
@@ -88,12 +93,20 @@ export const NavbarApp = () => {
                       Contacto
                     </Link>
 
-                    <button className="py-2 px-2" onClick={darkMode}>
-                      {
-                        mode ?  <CiLight color="black" size={25} className="bg-slate-200 rounded-full "></CiLight>
-                        : <CiDark  color="black" size={25} className="bg-slate-200 rounded-full "></CiDark>
-                      }
-                     
+                    <button className="" onClick={darkMode}>
+                      {mode ? (
+                        <CiLight
+                          color="black"
+                          size={25}
+                          className="bg-slate-200 rounded-full "
+                        ></CiLight>
+                      ) : (
+                        <CiDark
+                          color="black"
+                          size={25}
+                          className="bg-slate-200 rounded-full "
+                        ></CiDark>
+                      )}
                     </button>
                   </div>
                 </div>
