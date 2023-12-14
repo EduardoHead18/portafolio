@@ -9,7 +9,6 @@ import { CiLight, CiDark } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import { changeState } from "@/redux/futures/modeSlice";
 import { useReduxState } from "@/custom/useReduxState";
-import { scrollConfig } from "@/utils/ScrollReveal";
 import { RevealWrapper } from "next-reveal";
 
 export const NavbarApp = () => {
@@ -164,7 +163,7 @@ export const NavbarApp = () => {
             </div>
           </div>
 
-          {/**------------------------------------------------------------ mobile design*/}
+          {/**----------------------- mobile design-------------------------------------*/}
 
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">

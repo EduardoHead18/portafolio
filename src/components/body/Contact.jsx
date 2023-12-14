@@ -22,7 +22,7 @@ export const Contact = () => {
           mode ? "text-white" : "text-zinc-900"
         }`}
       >
-        kratosedu18@gmail.com
+        eduardohhm18@gmail.com
       </h2>
       <div className="flex flex-cols-2 ml-10 mr-10 gap-16 justify-center items-center md:flex-cols-3">
         <MapContact></MapContact>

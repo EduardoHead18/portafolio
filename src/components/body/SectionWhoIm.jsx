@@ -1,6 +1,6 @@
 import TypeIt from "typeit-react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { useReduxState } from "@/custom/useReduxState";
 const ContenLeft = () => {
   const mode = useReduxState();
@@ -57,7 +57,7 @@ export const SectionWhoIm = () => {
           {" "}
           <a
             className="bg-purple-600 p-2 rounded-md text-xl md:mt-9 px-7 hover:bg-purple-400 shadow-xl "
-            href="https://drive.google.com/file/d/1LX5ru5OiL721OkBfPEylqUEBHjA3pieJ/view"
+            href="https://drive.google.com/file/d/1Fte7Etkgx9hbmhlZlYlFqzAgL2ZBE872/view?usp=drive_link"
             target="_blank"
           >
             Ver CV
