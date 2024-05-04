@@ -21,6 +21,7 @@ export const NavbarApp = () => {
   const mode = useReduxState();
 
   const darkMode = () => {
+    const transitionCss = ""
     dispatch(changeState());
   };
 
@@ -36,7 +37,7 @@ export const NavbarApp = () => {
       <div className="min-h-full sticky top-0 opacity-90 z-50 ">
         <nav
           className={`transform ${
-            mode ? "text-white bg-zinc-900" : "text-zinc-900 bg-white"
+            mode ? "text-white bg-zinc-900 " : "text-zinc-900 black- bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
           }`}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

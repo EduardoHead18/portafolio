@@ -46,7 +46,7 @@ export const Skills = () => {
           return (
             <div
               key={index}
-              className="flex flex-col gap-7 justify-center   items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="flex flex-col gap-7 justify-center   items-center"
             >
               <Image
                 className="rounded-full w-12 h-12 lg:w-20 lg:h-20"
