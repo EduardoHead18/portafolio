@@ -77,11 +77,7 @@ const SocialNetwork = () => {
       image: "/assets/contact/github.jpg",
       text: "github",
     },
-    {
-      url: "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpfDRMttBkPBZTfVFsXjZNvSqhHCzNfRfmlgxhRxXjVqKblvcVFgPcZXKnjCgvLSmHwsSb",
-      image: "/assets/contact/gmail.jpg",
-      text: "gmail",
-    },
+
     {
       url: "https://www.linkedin.com/in/eduardo-hernández-morales-716473225/",
       image: "/assets/contact/linkendi.jpg",
