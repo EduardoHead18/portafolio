@@ -21,7 +21,7 @@ export const NavbarApp = () => {
   const mode = useReduxState();
 
   const darkMode = () => {
-    const transitionCss = ""
+    const transitionCss = "opacity ease-in-out "
     dispatch(changeState());
   };
 
@@ -31,6 +31,7 @@ export const NavbarApp = () => {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
 
   return (
     <>
@@ -100,7 +101,7 @@ export const NavbarApp = () => {
                         <CiLight
                           color="black"
                           size={25}
-                          className="bg-slate-200 rounded-full "
+                          className="bg-slate-200 rounded-full"
                         ></CiLight>
                       ) : (
                         <CiDark
