@@ -68,7 +68,7 @@ export const NavbarApp = () => {
                           : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
-                      Skills
+                      Projects
                     </Link>
                     {/** menu proejcts */}
                     <Link
@@ -80,7 +80,7 @@ export const NavbarApp = () => {
                           : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
-                      Proyectos
+                      Skills
                     </Link>
                     {/** menu proejcts */}
                     <Link
@@ -234,6 +234,19 @@ export const NavbarApp = () => {
         <SectionWhoIm></SectionWhoIm>
 
         <div id="section-2">
+        <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="bottom"
+            delay={100}
+            duration={2000}
+            distance="500px"
+            opacity={0}
+          >
+          <SectionProjects></SectionProjects>
+          </RevealWrapper>
+        </div>
+
+        <div id="section-3">
           <RevealWrapper
             rotate={{ x: 0, y: 0, z: 0 }}
             origin="bottom"
@@ -246,18 +259,7 @@ export const NavbarApp = () => {
           </RevealWrapper>
         </div>
 
-        <div id="section-3">
-        <RevealWrapper
-            rotate={{ x: 0, y: 0, z: 0 }}
-            origin="bottom"
-            delay={100}
-            duration={2000}
-            distance="500px"
-            opacity={0}
-          >
-          <SectionProjects></SectionProjects>
-          </RevealWrapper>
-        </div>
+
       </div>
       <div className="animacion" id="section-4">
         <Contact></Contact>

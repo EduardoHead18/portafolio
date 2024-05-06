@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const dataSlice = createSlice({
   name: "mode",
   initialState: {
-    value: true,
+    value: false,
   },
   reducers: {
     changeState : state => {
