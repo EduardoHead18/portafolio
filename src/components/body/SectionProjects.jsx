@@ -13,7 +13,8 @@ export const SectionProjects = () => {
           mode ? "text-white" : "text-zinc-900"
         } `}
       >
-        🚀 Projects
+          <span style={{ marginRight: '0.8rem' }}> 🚀</span> 
+          Projects
       </h1>
 
       <div className="grid justify-center grid-cols-1 gap-4 md:grid-cols-2">

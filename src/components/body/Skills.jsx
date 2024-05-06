@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import {motion} from 'framer-motion'
 import { useReduxState } from "@/custom/useReduxState";
+import { marginBottom } from "@/constants/tailwind-constants";
 
 export const Skills = () => {
   //state redux
@@ -30,16 +30,13 @@ export const Skills = () => {
   ];
 
   return (
-    <motion.div className="pt-20 lg:pt-16" animate={{
-      open:{opacity:1, x:0},
-      closed: { opacity: 0, x: "-100%" },
-    }}>
+    <div className={`pt-20 lg:pt-${marginBottom}`}>
       <h1
-        className={`text-lg text-center rounded-md   md:text-2xl font-bold ${
+        className={`text-lg rounded-md   md:text-2xl font-bold ${
           mode ? "text-white" : "text-zinc-900"
         } `}
       >
-        Habilidades
+        <span style={{ marginRight: '0.8rem' }}>🔨 </span>  Skills
       </h1>
       <div className="justify-center  grid grid-cols-2 text-zinc-900  md:grid-cols-5 md:ml-16 py-20 lg:py-24">
         {skillsData.map((data, index) => {
@@ -67,6 +64,6 @@ export const Skills = () => {
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
