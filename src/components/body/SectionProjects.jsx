@@ -47,7 +47,7 @@ export const SectionProjects = () => {
                   {data.tags.map((tag, index) => (
                     <p
                       key={index}
-                      className="opacity-60 text-center bg-slate-800 rounded-lg m-1 p-2"
+                      className="opacity-60 text-center text-sm font-extralight bg-slate-800 rounded-lg m-1 p-2"
                     >
                       #{tag}
                     </p>
