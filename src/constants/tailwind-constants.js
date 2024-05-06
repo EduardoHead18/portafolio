@@ -1,1 +1,1 @@
-export const marginBottom = 10
+export const marginBottom = 20

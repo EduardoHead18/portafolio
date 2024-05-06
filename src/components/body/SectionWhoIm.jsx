@@ -3,6 +3,7 @@ import Image from "next/image";
 // import { motion } from "framer-motion";
 import { useReduxState } from "@/custom/useReduxState";
 import { ButtonStyle } from "../ButtonStyle";
+import { marginBottom } from "@/constants/tailwind-constants";
 
 const ContenLeft = () => {
   const mode = useReduxState();
@@ -24,8 +25,7 @@ const ContenLeft = () => {
             mobile, frontend and backend{" "}
           </span>
           development. I like learning about clean code, architectures and good
-          programming practices. Able to adapt to different technologies and
-          environments, collaborate effectively in multidisciplinary teams.
+          programming practices.
         </p>
       </div>
     </div>
@@ -53,7 +53,7 @@ export const SectionWhoIm = () => {
   return (
     <>
       <div
-        className={`2xl:mt-14 2xl:mb-20 lg:h-67 ${
+        className={`2xl:mt-14 mb-${marginBottom} lg:h-67 ${
           mode
             ? "bg-slate-800 p-10 rounded-lg rounded-red-200 border-[1px] border-slate-600"
             : "bg-amber-50 p-10 rounded-lg rounded-red-200 border-[1px] border-amber-200"
@@ -86,7 +86,7 @@ const SocialNetwork = () => {
   ];
 
   return (
-    <div className="flex justify-center gap-10">
+    <div className="flex justify-center gap-10 mt-10 md:mt-0">
       {contactArray.map((data, index) => {
         return (
           <>
