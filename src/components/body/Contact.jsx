@@ -11,9 +11,9 @@ export const Contact = () => {
           mode ? "text-white" : "text-zinc-900"
         }`}
       >
-        Deja de ser un extraño y{" "}
+        Stop beign a stranger and{" "}
         <span className="bg-red-400 text-white rounded-md p-2">
-          Contáctame 😃
+          contact me 😃
         </span>{" "}
       </h1>
 
@@ -30,7 +30,7 @@ export const Contact = () => {
 
       <div className="text-center py-2 bg-gray-800 ">
         <h1 className="text-lg text-center rounded-md text-white px-3 md:text-xl font-semibold ">
-          Hecho con 💖 Next js y Tailwind css
+          Made with 💖 Next js & Tailwind css
         </h1>
       </div>
     </div>

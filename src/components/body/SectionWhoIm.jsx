@@ -63,7 +63,7 @@ export const SectionWhoIm = () => {
           <ContenLeft></ContenLeft>
           <ImageSection></ImageSection>
         </div>
-        <ButtonStyle text="See cv"></ButtonStyle>
+        <ButtonStyle text="See cv" url={"https://drive.google.com/file/d/12I5kKL-wMQfc_GPvXfE6c9e5NoP9XZae/view?usp=drive_link"}></ButtonStyle>
         <SocialNetwork></SocialNetwork>
       </div>
     </>
