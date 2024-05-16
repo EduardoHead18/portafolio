@@ -30,7 +30,7 @@ export const Contact = () => {
 
       <div className="text-center py-2 bg-gray-800 ">
         <h1 className="text-lg text-center rounded-md text-white px-3 md:text-xl font-semibold ">
-          Hecho con 💖 Next js y Tailwind css
+          Made with 💖 Next js & Tailwind css
         </h1>
       </div>
     </div>
