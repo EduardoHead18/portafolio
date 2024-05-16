@@ -11,9 +11,9 @@ export const Contact = () => {
           mode ? "text-white" : "text-zinc-900"
         }`}
       >
-        Deja de ser un extraño y{" "}
+        Stop beign a stranger and{" "}
         <span className="bg-red-400 text-white rounded-md p-2">
-          Contáctame 😃
+          contact me 😃
         </span>{" "}
       </h1>
 
