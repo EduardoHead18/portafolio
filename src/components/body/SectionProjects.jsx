@@ -1,6 +1,5 @@
 import { useReduxState } from "@/custom/useReduxState";
 import Image from "next/image";
-import { marginBottom } from "@/constants/tailwind-constants";
 import projectJson from "../../../projects.json";
 const coverStyle = { objectFit: "cover" };
 
@@ -9,7 +8,7 @@ export const SectionProjects = () => {
   return (
     <>
       <h1
-        className={`text-lg  rounded-md   md:text-2xl font-bold mb-${marginBottom} ${
+        className={`text-lg  rounded-md   md:text-2xl font-bold mb-14 mt-14 ${
           mode ? "text-white" : "text-zinc-900"
         } `}
       >
