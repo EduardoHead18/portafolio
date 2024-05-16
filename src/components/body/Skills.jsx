@@ -118,10 +118,7 @@ export const Skills = () => {
     },
     {
       icon: (
-        <GrMysql
-          size={60}
-          color="rgb(147 51 234 / var(--tw-text-opacity));"
-        />
+        <GrMysql size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
       ),
       text: "Mysql",
     },
@@ -136,19 +133,13 @@ export const Skills = () => {
     },
     {
       icon: (
-        <FaGithub
-          size={60}
-          color="rgb(147 51 234 / var(--tw-text-opacity));"
-        />
+        <FaGithub size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
       ),
       text: "GitHub",
     },
     {
       icon: (
-        <FaSwift
-          size={60}
-          color="rgb(147 51 234 / var(--tw-text-opacity));"
-        />
+        <FaSwift size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
       ),
       text: "Swift UI",
     },
@@ -157,13 +148,13 @@ export const Skills = () => {
   return (
     <div className="">
       <h1
-        className={`text-lg rounded-md   md:text-2xl font-bold mt-14  mb-14 ${
+        className={`text-lg rounded-md   md:text-2xl font-bold mt-20  mb-20 ${
           mode ? "text-white" : "text-zinc-900"
         } `}
       >
         <span style={{ marginRight: "0.8rem" }}>🔨 </span> Skills
       </h1>
-      <div className="justify-center  grid grid-cols-2 gap-8  text-zinc-900  md:grid-cols-5 md:ml-16 py-20 lg:py-24">
+      <div className="justify-center  grid grid-cols-2 gap-8  text-zinc-900  md:grid-cols-5 md:ml-16 ">
         {skillsData.map((data, index) => {
           const IconComponent = data.icon;
           return (
