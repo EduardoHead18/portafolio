@@ -1,44 +1,52 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { SectionWhoIm } from "../body/SectionWhoIm";
-import { scrollConfig } from "@/utils/ScrollReveal";
 import { SectionProjects } from "../body/SectionProjects";
 import { Skills } from "../body/Skills";
 import { Contact } from "../body/Contact";
+import { CiLight, CiDark } from "react-icons/ci";
+import { useDispatch } from "react-redux";
+import { changeState } from "@/redux/futures/modeSlice";
+import { useReduxState } from "@/custom/useReduxState";
+import { RevealWrapper } from "next-reveal";
 
 export const NavbarApp = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isActive, setIsActive] = useState(router.pathname);
-  const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const handleOpenModal = () => {
-    setIsModalVisible(true);
+  //redux functions
+  const dispatch = useDispatch();
+  const mode = useReduxState();
+
+  const darkMode = () => {
+    const transitionCss = "opacity ease-in-out "
+    dispatch(changeState());
   };
 
-  const handleCloseModal = () => {
-    setIsModalVisible(false);
-  };
+  //style color
+  const fontDarkMode = `font-medium ${mode ? "text-white" : "text-zinc-900"}`;
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    scrollConfig();
-  }, []);
+
   return (
     <>
       <div className="min-h-full sticky top-0 opacity-90 z-50 ">
-        <nav className="bg-slate-900 transform ">
+        <nav
+          className={`transform ${
+            mode ? "text-white bg-zinc-900 " : "text-zinc-900 black- bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+          }`}
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between md:justify-center">
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
                 <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="ml-10 flex  space-x-4">
                     {/** menu Inicio */}
                     <Link
                       href={"/"}
@@ -46,7 +54,7 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "/"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium text-white"
+                          : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
                       Inicio
@@ -58,10 +66,10 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "#section-2"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium  text-white    "
+                          : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
-                      Skills
+                      Projects
                     </Link>
                     {/** menu proejcts */}
                     <Link
@@ -70,10 +78,10 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "section-3"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium text-white"
+                          : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
-                      Proyectos
+                      Skills
                     </Link>
                     {/** menu proejcts */}
                     <Link
@@ -82,11 +90,27 @@ export const NavbarApp = () => {
                       className={`${
                         isActive == "#section-4"
                           ? "text-purple-600 font-bold border-b-2"
-                          : "font-medium  text-white"
+                          : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
                       Contacto
                     </Link>
+
+                    <button className="" onClick={darkMode}>
+                      {mode ? (
+                        <CiLight
+                          color="black"
+                          size={25}
+                          className="bg-slate-200 rounded-full"
+                        ></CiLight>
+                      ) : (
+                        <CiDark
+                          color="black"
+                          size={25}
+                          className="bg-slate-200 rounded-full "
+                        ></CiDark>
+                      )}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -141,18 +165,16 @@ export const NavbarApp = () => {
             </div>
           </div>
 
-          {/**------------------------------------------------------------ */}
+          {/**----------------------- mobile design-------------------------------------*/}
 
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">
-              <div className='space-y-1 text-center pt-2 pb-3 sm:px-3 transform transition ease-in-out delay-150 hover:-translate-y-1 duration-100 '>
+              <div className="space-y-1 text-center pt-2 pb-3 sm:px-3 transform transition ease-in-out delay-150 hover:-translate-y-1 duration-100 ">
                 <Link
                   href={"/"}
                   onClick={() => setIsActive("/")}
                   className={`${
-                    isActive == "/"
-                      ? "text-purple-600 font-bold"
-                      : "font-medium text-white"
+                    isActive == "/" ? "text-purple-600 font-bold" : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
                   Inicio
@@ -164,7 +186,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-2"
                       ? "text-purple-600 font-bold"
-                      : "font-medium text-white"
+                      : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
                   Skills
@@ -176,7 +198,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-3"
                       ? "text-purple-600 font-bold"
-                      : "font-medium text-white"
+                      : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
                   Proyectos
@@ -188,7 +210,7 @@ export const NavbarApp = () => {
                   className={`${
                     isActive == "#section-4"
                       ? "text-purple-600 font-bold"
-                      : "font-medium text-white"
+                      : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
                   Contacto
@@ -207,26 +229,42 @@ export const NavbarApp = () => {
         </main>
       </div>
 
-      {/**componentes que se renderizan con el navbar-section de la pagina index (spa) */}
-      <div className="ml-10 mr-10 md:ml-20 md:mr-20">
-        <div className="animacion">
-          <SectionWhoIm></SectionWhoIm>
-        </div>
+      {/**components that are rendered with the navbar-section of the page index (Landing page) (spa) */}
+      {/**Here the margin x of the page is defined */}
+      <div className="mx-5 sm:mx-5 md:mx-24 2xl:mx-96">
+        <SectionWhoIm></SectionWhoIm>
 
-        <div className="animacion" id="section-2">
-          <Skills></Skills>
-        </div>
-
-        <div className="animacion" id="section-3">
+        <div id="section-2">
+        <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="bottom"
+            delay={100}
+            duration={2000}
+            distance="500px"
+            opacity={0}
+          >
           <SectionProjects></SectionProjects>
+          </RevealWrapper>
         </div>
 
-       
+        <div id="section-3">
+          <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="bottom"
+            delay={100}
+            duration={2000}
+            distance="1000px"
+            opacity={0}
+          >
+            <Skills></Skills>
+          </RevealWrapper>
+        </div>
+
 
       </div>
       <div className="animacion" id="section-4">
-          <Contact></Contact>
-        </div>
+        <Contact></Contact>
+      </div>
     </>
   );
 };
