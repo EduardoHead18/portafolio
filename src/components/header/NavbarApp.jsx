@@ -93,7 +93,7 @@ export const NavbarApp = () => {
                           : fontDarkMode
                       } px-3 py-2 text-lg`}
                     >
-                      Contacto
+                      Contact
                     </Link>
 
                     <button className="" onClick={darkMode}>
@@ -181,7 +181,7 @@ export const NavbarApp = () => {
                 </Link>
 
                 <Link
-                  href={"#section-2"}
+                  href={"#section-3"}
                   onClick={() => setIsActive("#section-2")}
                   className={`${
                     isActive == "#section-2"
@@ -193,7 +193,7 @@ export const NavbarApp = () => {
                 </Link>
 
                 <Link
-                  href={"#section-3"}
+                  href={"#section-2"}
                   onClick={() => setIsActive("#section-3")}
                   className={`${
                     isActive == "#section-3"
@@ -213,7 +213,7 @@ export const NavbarApp = () => {
                       : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
-                  Contacto
+                  Contact
                 </Link>
 
                 {/**text */}
@@ -259,8 +259,6 @@ export const NavbarApp = () => {
             <Skills></Skills>
           </RevealWrapper>
         </div>
-
-
       </div>
       <div className="animacion" id="section-4">
         <Contact></Contact>
