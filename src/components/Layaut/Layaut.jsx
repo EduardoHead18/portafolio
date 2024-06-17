@@ -8,7 +8,7 @@ export const Layaut = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Eduardo Hm</title>
+        <title>Eduardo - Software engineer</title>
       </Head>
       <div
         animate={{ x: 100 }}
