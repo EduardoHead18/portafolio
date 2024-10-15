@@ -21,7 +21,7 @@ export const NavbarApp = () => {
   const mode = useReduxState();
 
   const darkMode = () => {
-    const transitionCss = "opacity ease-in-out "
+    const transitionCss = "opacity ease-in-out ";
     dispatch(changeState());
   };
 
@@ -32,13 +32,14 @@ export const NavbarApp = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   return (
     <>
       <div className="min-h-full sticky top-0 opacity-90 z-50 ">
         <nav
           className={`transform ${
-            mode ? "text-white bg-zinc-900 " : "text-zinc-900 black- bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+            mode
+              ? "text-white bg-zinc-900 "
+              : "text-zinc-900 black- bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
           }`}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -46,10 +47,11 @@ export const NavbarApp = () => {
               <div className="flex items-center">
                 <div className="flex-shrink-0"></div>
                 <div className="hidden md:block">
-                  <div className="ml-10 flex  space-x-4">
+                  <div className="ml-10 flex space-x-4">
                     {/** menu Inicio */}
-                    <Link
-                      href={"/"}
+                    <a
+                      href="#section-1"
+                      scroll={false}
                       onClick={() => setIsActive("/")}
                       className={`${
                         isActive == "/"
@@ -58,10 +60,11 @@ export const NavbarApp = () => {
                       }  px-3 py-2 text-lg`}
                     >
                       Inicio
-                    </Link>
+                    </a>
                     {/** menu Skills */}
-                    <Link
-                      href={"#section-2"}
+                    <a
+                      href="#section-2"
+                      scroll={false}
                       onClick={() => setIsActive("#section-2")}
                       className={`${
                         isActive == "#section-2"
@@ -70,10 +73,10 @@ export const NavbarApp = () => {
                       } px-3 py-2 text-lg`}
                     >
                       Projects
-                    </Link>
+                    </a>
                     {/** menu proejcts */}
-                    <Link
-                      href={"#section-3"}
+                    <a
+                      href="#section-3"
                       onClick={() => setIsActive("section-3")}
                       className={`${
                         isActive == "section-3"
@@ -82,9 +85,9 @@ export const NavbarApp = () => {
                       }  px-3 py-2 text-lg`}
                     >
                       Skills
-                    </Link>
+                    </a>
                     {/** menu proejcts */}
-                    <Link
+                    <a
                       href={"#section-4"}
                       onClick={() => setIsActive("#section-4")}
                       className={`${
@@ -94,7 +97,7 @@ export const NavbarApp = () => {
                       } px-3 py-2 text-lg`}
                     >
                       Contact
-                    </Link>
+                    </a>
 
                     <button className="" onClick={darkMode}>
                       {mode ? (
@@ -231,33 +234,16 @@ export const NavbarApp = () => {
 
       {/**components that are rendered with the navbar-section of the page index (Landing page) (spa) */}
       {/**Here the margin x of the page is defined */}
-      <div className="mx-5 sm:mx-5 md:mx-24 2xl:mx-96">
-        <SectionWhoIm></SectionWhoIm>
-
+      <div className="mx-5 sm:mx-5 md:mx-24 2xl:mx-96 ">
+        <div id="section-1">
+          <SectionWhoIm></SectionWhoIm>
+        </div>
         <div id="section-2">
-        <RevealWrapper
-            rotate={{ x: 0, y: 0, z: 0 }}
-            origin="bottom"
-            delay={100}
-            duration={2000}
-            distance="500px"
-            opacity={0}
-          >
           <SectionProjects></SectionProjects>
-          </RevealWrapper>
         </div>
 
         <div id="section-3">
-          <RevealWrapper
-            rotate={{ x: 0, y: 0, z: 0 }}
-            origin="bottom"
-            delay={100}
-            duration={2000}
-            distance="1000px"
-            opacity={0}
-          >
-            <Skills></Skills>
-          </RevealWrapper>
+          <Skills></Skills>
         </div>
       </div>
       <div className="animacion" id="section-4">
