@@ -204,7 +204,7 @@ export const NavbarApp = () => {
                       : fontDarkMode
                   }  block px-3 py-2 text-sm`}
                 >
-                  Proyectos
+                  Projects
                 </Link>
 
                 <Link
