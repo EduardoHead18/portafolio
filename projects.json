@@ -10,7 +10,7 @@
       "title": "Bamp Autos",
       "image": "/assets/img-projects/bamp_autos.png",
       "description": "Web application that allows you to schedule appointments with clients. It has authentication, an appointment module to see the status of the appointment, whether pending, completed, etc.",
-      "tags": ["Next Js", "Api", "Tailwind Css", "Auth", "Cache"],
+      "tags": ["Next Js", "Api", "Tailwind Css", "Auth", "Caching"],
       "url": "https://bamp-frontend.vercel.app"
     },
     {
@@ -30,6 +30,13 @@
         "Stripe"
       ],
       "url": "https://your-confort-page-8mqvr9j8g-eduardohead18.vercel.app/"
+    },
+    {
+      "title": "API Restful",
+      "image": "/assets/img-projects/without-images.png",
+      "description": "Business management web application designed for stores, which allows you to register and manage products efficiently. It offers a system of roles and permissions to differentiate the tasks of administrators and employees, optimizing internal processes.",
+      "tags": ["Java 17", "Spring Boot", "Hibernate", "Spring security", "Session", "Docker","Swagger","PostreSQL"],
+      "url": "https://github.com/EduardoHead18/save-products.git"
     }
   ]
   
