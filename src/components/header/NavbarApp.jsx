@@ -48,7 +48,7 @@ export const NavbarApp = () => {
                 <div className="flex-shrink-0"></div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex space-x-4">
-                    {/** menu Inicio */}
+                    {/** menu Home */}
                     <a
                       href="#section-1"
                       scroll={false}
@@ -59,7 +59,7 @@ export const NavbarApp = () => {
                           : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
-                      Inicio
+                      Home
                     </a>
                     {/** menu Skills */}
                     <a
@@ -169,8 +169,6 @@ export const NavbarApp = () => {
           </div>
 
           {/**----------------------- mobile design-------------------------------------*/}
-          {/**  TODO: replace the "LINK" tag with "a" to make the html behavior animation work */}
-
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">
               <div className="space-y-1 text-center pt-2 pb-3 sm:px-3 transform transition ease-in-out delay-150 hover:-translate-y-1 duration-100 ">
@@ -181,7 +179,7 @@ export const NavbarApp = () => {
                     isActive == "/" ? "text-purple-600 font-bold" : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
-                  Inicio
+                  Home
                 </a>
 
                 <a
