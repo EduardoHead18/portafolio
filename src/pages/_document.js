@@ -9,7 +9,7 @@ export default function Document() {
         href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap"
         rel="stylesheet"
       ></link>
-
+      <link rel="icon" href="/assets/icon.jpg" type="image/x-icon" />
       <title>Portafolio</title>
       <Head />
       <body>

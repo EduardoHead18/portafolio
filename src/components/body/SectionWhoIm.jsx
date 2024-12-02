@@ -15,17 +15,18 @@ const ContenLeft = () => {
 
       <div>
         <p
-          style={{ fontFamily: "'Hind Madurai' ,sans-serif" }}
-          className={`animacion-left text-xl mt-10 md:mt-20 md:text-2xl lg:text2xl opacity-90  lg:mr-44 ${
+          style={{ fontFamily: "'Hind Madurai' ,sans-serif",  lineHeight: "2.25rem" }}
+          className={`animacion-left text-xl mt-10 md:mt-20 md:text-xl  opacity-90 lg:mr-44 ${
             mode ? "text-white" : "text-zinc-900 "
           }`}
         >
-          Software engineer with experience in{" "}
+          Software engineer with 1 year of experience in {"  "}
           <span className="text-red-400 font-semibold">
-            mobile, frontend and backend{" "}
+            Fullstack projects{" "}
           </span>
-          development. I like learning about clean code, architectures and good
-          programming practices.
+        I like to create clear and functional solutions, applying good programming practices. 
+        I am adaptable to new technologies and work in a team, achieving objectives efficiently.
+
         </p>
       </div>
     </div>
@@ -38,7 +39,7 @@ const ImageSection = () => {
     <Image
       className=" items-center rounded-full overflow-hidden hidden lg:block"
       class
-      src={"/assets/me.jpg"}
+      src={"/assets/icon.jpg"}
       alt="profile"
       loading="lazy"
       width={700}
@@ -63,7 +64,7 @@ export const SectionWhoIm = () => {
           <ContenLeft></ContenLeft>
           <ImageSection></ImageSection>
         </div>
-        <ButtonStyle text="See cv" url={"https://drive.google.com/file/d/12I5kKL-wMQfc_GPvXfE6c9e5NoP9XZae/view?usp=drive_link"}></ButtonStyle>
+        <ButtonStyle text="See cv" url={"https://drive.google.com/file/d/1cGBhBchVvOhrdI-RKNBQpZ90AaxvV8H6/view?usp=sharing"}></ButtonStyle>
         <SocialNetwork></SocialNetwork>
       </div>
     </>

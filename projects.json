@@ -1,18 +1,11 @@
 [
-    {
-      "title": "Black Honey Café",
-      "image": "/assets/img-projects/black_honey.jpg",
-      "description": "Blog for the Black Honey Café cafeteria. The website was created so that they could display their products on the internet. The cafe is located in Guadalajara Jalisco Mexico",
-      "tags": ["React js", "React Router", "Css"],
-      "url": "https://blackhonycafe.com"
-    },
-    {
-      "title": "Bamp Autos",
-      "image": "/assets/img-projects/bamp_autos.png",
-      "description": "Web application that allows you to schedule appointments with clients. It has authentication, an appointment module to see the status of the appointment, whether pending, completed, etc.",
-      "tags": ["Next Js", "Api", "Tailwind Css", "Auth", "Cache"],
-      "url": "https://bamp-frontend.vercel.app"
-    },
+  {
+    "title": "Get Ofertas - (Work In Progress)",
+    "image": "/assets/img-projects/get-ofertas.png",
+    "description": "An app was developed that allows users to quickly find the best deals on a wide range of products on stores such as Amazon, Mercado Libre and AliExpress. Using web scraping techniques and data analysis, the app offers a real-time comparison of prices across different online stores. This allows users to make more informed purchasing decisions and save money.",
+    "tags": ["Next Js", "TypeScript", "Tailwind css", "Zustand", "LocalStorage", "Next Js Backend"],
+    "url": "https://github.com/EduardoHead18/get-ofertas.git"
+  },
     {
       "title": "Your confort",
       "image": "/assets/img-projects/yc.png",
@@ -30,6 +23,13 @@
         "Stripe"
       ],
       "url": "https://your-confort-page-8mqvr9j8g-eduardohead18.vercel.app/"
+    },
+    {
+      "title": "API Restful",
+      "image": "/assets/img-projects/without-images.png",
+      "description": "Business management web application designed for stores, which allows you to register and manage products efficiently. It offers a system of roles and permissions to differentiate the tasks of administrators and employees, optimizing internal processes.",
+      "tags": ["Java 17", "Spring Boot", "Hibernate", "Spring security", "Session", "Docker","Swagger","PostreSQL"],
+      "url": "https://github.com/EduardoHead18/save-products.git"
     }
   ]
   

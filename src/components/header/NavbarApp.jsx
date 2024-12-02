@@ -48,7 +48,7 @@ export const NavbarApp = () => {
                 <div className="flex-shrink-0"></div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex space-x-4">
-                    {/** menu Inicio */}
+                    {/** menu Home */}
                     <a
                       href="#section-1"
                       scroll={false}
@@ -59,7 +59,7 @@ export const NavbarApp = () => {
                           : fontDarkMode
                       }  px-3 py-2 text-lg`}
                     >
-                      Inicio
+                      Home
                     </a>
                     {/** menu Skills */}
                     <a
@@ -169,21 +169,20 @@ export const NavbarApp = () => {
           </div>
 
           {/**----------------------- mobile design-------------------------------------*/}
-
           {isMenuOpen && (
             <div className="md:hidden" id="mobile-menu">
               <div className="space-y-1 text-center pt-2 pb-3 sm:px-3 transform transition ease-in-out delay-150 hover:-translate-y-1 duration-100 ">
-                <Link
-                  href={"/"}
+                <a
+                  href={"#section-1"}
                   onClick={() => setIsActive("/")}
                   className={`${
                     isActive == "/" ? "text-purple-600 font-bold" : fontDarkMode
                   }  px-3 block py-2 text-sm`}
                 >
-                  Inicio
-                </Link>
+                  Home
+                </a>
 
-                <Link
+                <a
                   href={"#section-3"}
                   onClick={() => setIsActive("#section-2")}
                   className={`${
@@ -193,9 +192,9 @@ export const NavbarApp = () => {
                   }  px-3 block py-2 text-sm`}
                 >
                   Skills
-                </Link>
+                </a>
 
-                <Link
+                <a
                   href={"#section-2"}
                   onClick={() => setIsActive("#section-3")}
                   className={`${
@@ -205,9 +204,9 @@ export const NavbarApp = () => {
                   }  block px-3 py-2 text-sm`}
                 >
                   Projects
-                </Link>
+                </a>
 
-                <Link
+                <a
                   href={"#section-4"}
                   onClick={() => setIsActive("#section-4")}
                   className={`${
@@ -217,7 +216,7 @@ export const NavbarApp = () => {
                   }  block px-3 py-2 text-sm`}
                 >
                   Contact
-                </Link>
+                </a>
 
                 {/**text */}
                 <div className="ml-4 flex justify-between items-center md:ml-6 px-5">

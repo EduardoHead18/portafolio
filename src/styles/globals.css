@@ -30,3 +30,12 @@ body {
     rgb(var(--background-start-rgb));
 
 }
+
+.card-animation{
+  transition: transform 0.4s ease-out;
+
+}
+.card-animation:hover{
+  transform: translateY(-1px) scale(1.01);
+}
+
