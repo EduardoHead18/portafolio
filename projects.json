@@ -3,8 +3,26 @@
     "title": "Get Ofertas - (Work In Progress)",
     "image": "/assets/img-projects/get-ofertas.png",
     "description": "An app was developed that allows users to quickly find the best deals on a wide range of products on stores such as Amazon, Mercado Libre and AliExpress. Using web scraping techniques and data analysis, the app offers a real-time comparison of prices across different online stores. This allows users to make more informed purchasing decisions and save money.",
-    "tags": ["Next Js", "TypeScript", "Tailwind css", "Zustand", "LocalStorage", "Next Js Backend"],
-    "url": "https://github.com/EduardoHead18/get-ofertas.git"
+    "tags": ["Next Js", "Puppeteer", "TypeScript", "Tailwind css", "Zustand", "LocalStorage", "Next Js Backend"],
+    "url": "https://get-ofertas.vercel.app/"
+  },
+  {
+    "title": "Bamp Autos",
+    "image": "/assets/img-projects/bamp.png",
+    "description": "Bamp is an innovative application designed to facilitate the scheduling of appointments at automotive agencies, specializing in the pricing of premium vehicles from brands such as BMW, Mercedes, Audi and Porsche.",
+    "tags": [
+      "React_Native",
+      "Expo",
+      "Cloudinary",
+      "Google_auth",
+      "Async_storage",
+      "IOS",
+      "Android",
+      "Context",
+      "Image_picker",
+      "Stripe"
+    ],
+    "url": "https://bamp-frontend.vercel.app/"
   },
     {
       "title": "Your confort",
