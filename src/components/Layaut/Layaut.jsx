@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { NavbarApp } from "../header/NavbarApp";
-// import {motion} from "framer-motion";
+
 import { useReduxState } from "@/custom/useReduxState";
 export const Layaut = ({ children }) => {
   const mode = useReduxState();
