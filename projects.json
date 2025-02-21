@@ -3,7 +3,16 @@
     "title": "Get Ofertas - (Work In Progress)",
     "image": "/assets/img-projects/get-ofertas.png",
     "description": "An app was developed that allows users to quickly find the best deals on a wide range of products on stores such as Amazon, Mercado Libre and AliExpress. Using web scraping techniques and data analysis, the app offers a real-time comparison of prices across different online stores. This allows users to make more informed purchasing decisions and save money.",
-    "tags": ["Next Js", "Puppeteer", "TypeScript", "Tailwind css", "Zustand", "LocalStorage", "Next Js Backend"],
+    "tags": [
+      "Next Js",
+      "Puppeteer core",
+      "Daisy ui",
+      "TypeScript",
+      "Tailwind css",
+      "Zustand",
+      "LocalStorage",
+      "Next Js Backend"
+    ],
     "url": "https://get-ofertas.vercel.app/"
   },
   {
@@ -11,43 +20,46 @@
     "image": "/assets/img-projects/bamp.png",
     "description": "Bamp is an innovative application designed to facilitate the scheduling of appointments at automotive agencies, specializing in the pricing of premium vehicles from brands such as BMW, Mercedes, Audi and Porsche.",
     "tags": [
-      "React_Native",
-      "Expo",
-      "Cloudinary",
-      "Google_auth",
-      "Async_storage",
-      "IOS",
-      "Android",
-      "Context",
-      "Image_picker",
-      "Stripe"
+      "Next Js",
+      "JavaScript",
+      "LocalStorage",
+      "Tailwind css",
+      "API"
     ],
     "url": "https://bamp-frontend.vercel.app/"
   },
-    {
-      "title": "Your confort",
-      "image": "/assets/img-projects/yc.png",
-      "description": "Your Confort makes it easy for people to find accommodation through a mobile application. We focus on providing an intuitive and efficient platform that connects users with rental housing options, providing a reliable and convenient solution to meet their housing needs.",
-      "tags": [
-        "React_Native",
-        "Expo",
-        "Cloudinary",
-        "Google_auth",
-        "Async_storage",
-        "IOS",
-        "Android",
-        "Context",
-        "Image_picker",
-        "Stripe"
-      ],
-      "url": "https://your-confort-page.vercel.app/"
-    },
-    {
-      "title": "API Restful",
-      "image": "/assets/img-projects/without-images.png",
-      "description": "Business management web application designed for stores, which allows you to register and manage products efficiently. It offers a system of roles and permissions to differentiate the tasks of administrators and employees, optimizing internal processes.",
-      "tags": ["Java 17", "Spring Boot", "Hibernate", "Spring security", "Session", "Docker","Swagger","PostreSQL"],
-      "url": "https://github.com/EduardoHead18/save-products.git"
-    }
-  ]
-  
+  {
+    "title": "Your confort",
+    "image": "/assets/img-projects/yc.png",
+    "description": "Your Confort makes it easy for people to find accommodation through a mobile application. We focus on providing an intuitive and efficient platform that connects users with rental housing options, providing a reliable and convenient solution to meet their housing needs.",
+    "tags": [
+      "React Native",
+      "Expo",
+      "Cloudinary",
+      "Google auth",
+      "Async storage",
+      "IOS",
+      "Android",
+      "Context",
+      "Image picker",
+      "Stripe"
+    ],
+    "url": "https://your-confort-page.vercel.app/"
+  },
+  {
+    "title": "API Restful",
+    "image": "/assets/img-projects/without-images.png",
+    "description": "Business management web application designed for stores, which allows you to register and manage products efficiently. It offers a system of roles and permissions to differentiate the tasks of administrators and employees, optimizing internal processes.",
+    "tags": [
+      "Java 17",
+      "Spring Boot",
+      "Hibernate",
+      "Spring security",
+      "Session",
+      "Docker",
+      "Swagger",
+      "PostreSQL"
+    ],
+    "url": "https://github.com/EduardoHead18/save-products.git"
+  }
+]
