@@ -69,8 +69,8 @@ export const SectionProjects = () => {
 const SeeMoreOnGithubCard = ({ mode }) => {
   return (
     <a
-    target="_blank"
-    href="https://github.com/EduardoHead18"
+      target="_blank"
+      href="https://github.com/EduardoHead18"
       className={`w-full h-[200px] flex flex-col items-center justify-center rounded-lg border-[1px] border-slate-600 py-10 ${
         mode ? "hover:shadow-sm" : "hover:shadow-md"
       } hover:border-violet-300 card-animation`}

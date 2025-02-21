@@ -1,6 +1,4 @@
-import TypeIt from "typeit-react";
 import Image from "next/image";
-// import { motion } from "framer-motion";
 import { useReduxState } from "@/custom/useReduxState";
 import { ButtonStyle } from "../ButtonStyle";
 import { marginBottom } from "@/constants/tailwind-constants";
@@ -15,7 +13,10 @@ const ContenLeft = () => {
 
       <div>
         <p
-          style={{ fontFamily: "'Hind Madurai' ,sans-serif",  lineHeight: "2.25rem" }}
+          style={{
+            fontFamily: "'Hind Madurai' ,sans-serif",
+            lineHeight: "2.25rem",
+          }}
           className={`animacion-left text-xl mt-10 md:mt-20 md:text-xl  opacity-90 lg:mr-44 ${
             mode ? "text-white" : "text-zinc-900 "
           }`}
@@ -24,9 +25,9 @@ const ContenLeft = () => {
           <span className="text-red-400 font-semibold">
             Fullstack projects{" "}
           </span>
-        I like to create clear and functional solutions, applying good programming practices. 
-        I am adaptable to new technologies and work in a team, achieving objectives efficiently.
-
+          I like to create clear and functional solutions, applying good
+          programming practices. I am adaptable to new technologies and work in
+          a team, achieving objectives efficiently.
         </p>
       </div>
     </div>
@@ -64,7 +65,12 @@ export const SectionWhoIm = () => {
           <ContenLeft></ContenLeft>
           <ImageSection></ImageSection>
         </div>
-        <ButtonStyle text="See cv" url={"https://drive.google.com/file/d/1cGBhBchVvOhrdI-RKNBQpZ90AaxvV8H6/view?usp=sharing"}></ButtonStyle>
+        <ButtonStyle
+          text="See cv"
+          url={
+            "https://drive.google.com/file/d/1cGBhBchVvOhrdI-RKNBQpZ90AaxvV8H6/view?usp=sharing"
+          }
+        ></ButtonStyle>
         <SocialNetwork></SocialNetwork>
       </div>
     </>

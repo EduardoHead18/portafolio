@@ -13,7 +13,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
-    "framer-motion": "^10.13.0",
+    "motion": "^12.4.7",
     "next": "13.3.1",
     "next-reveal": "^1.0.6",
     "postcss": "8.4.23",
