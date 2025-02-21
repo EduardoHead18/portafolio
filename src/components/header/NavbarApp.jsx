@@ -21,7 +21,6 @@ export const NavbarApp = () => {
   const mode = useReduxState();
 
   const darkMode = () => {
-    const transitionCss = "opacity ease-in-out ";
     dispatch(changeState());
   };
 
@@ -34,12 +33,12 @@ export const NavbarApp = () => {
 
   return (
     <>
-      <div className="min-h-full sticky top-0 opacity-90 z-50 ">
+      <div className="w-full sticky top-0 z-50">
         <nav
-          className={`transform ${
+          className={`transform w-full md:w-[40%] md:mx-auto md:rounded-full backdrop-blur-lg ${
             mode
-              ? "text-white bg-zinc-900 "
-              : "text-zinc-900 black- bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+              ? "text-white bg-black/30"
+              : "text-zinc-900 bg-gray-200/30 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
           }`}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -226,21 +225,16 @@ export const NavbarApp = () => {
             </div>
           )}
         </nav>
-        <main>
-          <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"></div>
-        </main>
       </div>
 
       {/**components that are rendered with the navbar-section of the page index (Landing page) (spa) */}
       {/**Here the margin x of the page is defined */}
-      <div className="mx-5 sm:mx-5 md:mx-24 2xl:mx-96 ">
+      <div className="mx-5 mt-5 sm:mx-5 md:mx-24 2xl:mx-96 ">
         <div id="section-1">
           <SectionWhoIm></SectionWhoIm>
         </div>
         <div id="section-2">
-          <SectionProjects></SectionProjects>
-        </div>
-
+          <SectionProjects></SectionProjects></div>
         <div id="section-3">
           <Skills></Skills>
         </div>
