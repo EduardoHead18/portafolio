@@ -50,7 +50,7 @@ const MapContact = () => {
       text: "gmail",
     },
     {
-      url: "https://www.linkedin.com/in/eduardo-hernández-morales-716473225/",
+      url: "https://www.linkedin.com/in/eduardo-hhm/",
       image: "/assets/contact/linkendi.jpg",
       text: "linkedin",
     },
