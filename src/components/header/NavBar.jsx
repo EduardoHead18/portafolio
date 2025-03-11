@@ -26,7 +26,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="w-full sticky top-0 z-50">
+    <div className="w-full sticky lg:pt-3 top-0 z-50">
       <nav
         className={`transform w-full md:w-[40%] md:mx-auto md:rounded-full backdrop-blur-lg ${
           mode
