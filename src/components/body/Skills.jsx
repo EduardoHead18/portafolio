@@ -12,10 +12,9 @@ import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb, SiPostman } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { FaSwift, FaHtml5,FaCss3Alt,FaLinux } from "react-icons/fa";
-import { DiScrum } from "react-icons/di";
+import { SiMongodb, SiPostman, SiGithubactions } from "react-icons/si";
+import { FaGithub, FaAws } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaLinux } from "react-icons/fa";
 export const Skills = () => {
   //state redux
   const mode = useReduxState();
@@ -64,10 +63,7 @@ export const Skills = () => {
     },
     {
       icon: (
-        <FaHtml5
-          size={60}
-          color="rgb(147 51 234 / var(--tw-text-opacity));"
-        />
+        <FaHtml5 size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
       ),
       text: "Html",
     },
@@ -157,21 +153,27 @@ export const Skills = () => {
     },
     {
       icon: (
-        <FaSwift size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
-      ),
-      text: "Swift UI",
-    },
-    {
-      icon: (
-        <SiPostman size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
+        <SiPostman
+          size={60}
+          color="rgb(147 51 234 / var(--tw-text-opacity));"
+        />
       ),
       text: "Postman",
     },
     {
       icon: (
-        <DiScrum size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
+        <FaAws size={60} color="rgb(147 51 234 / var(--tw-text-opacity));" />
       ),
-      text: "Scrum",
+      text: "AWS",
+    },
+    {
+      icon: (
+        <SiGithubactions
+          size={60}
+          color="rgb(147 51 234 / var(--tw-text-opacity));"
+        />
+      ),
+      text: "CI / CD",
     },
     {
       icon: (
@@ -179,7 +181,6 @@ export const Skills = () => {
       ),
       text: "Linux",
     },
-    
   ];
 
   return (
@@ -191,7 +192,7 @@ export const Skills = () => {
       >
         <span style={{ marginRight: "0.8rem" }}>🔨 </span> Skills & Tools
       </h1>
-      <div className="justify-center  grid grid-cols-2 gap-8  text-zinc-900  md:grid-cols-5 md:ml-16 ">
+      <div className="justify-center  grid grid-cols-5 gap-8  text-zinc-900  md:grid-cols-5 md:ml-16 ">
         {skillsData.map((data, index) => {
           const IconComponent = data.icon;
           return (
