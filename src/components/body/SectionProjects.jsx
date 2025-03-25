@@ -29,7 +29,7 @@ export const SectionProjects = () => {
               <Image
                 src={data.image}
                 width={1000}
-                height={0}
+                height={1000}
                 className="rounded-tl-none rounded-tr-none rounded-bl-2xl rounded-br-2xl"
               />
               <div className="p-3">
@@ -50,7 +50,7 @@ export const SectionProjects = () => {
                       key={index}
                       className="opacity-60 text-center text-sm font-extralight bg-slate-800 rounded-lg m-1 p-2"
                     >
-                      #{tag}
+                      # {tag}
                     </p>
                   ))}
                 </div>

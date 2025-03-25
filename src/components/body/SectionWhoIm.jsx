@@ -17,17 +17,17 @@ const ContenLeft = () => {
             fontFamily: "'Hind Madurai' ,sans-serif",
             lineHeight: "2.25rem",
           }}
-          className={`animacion-left text-xl mt-10 md:mt-20 md:text-xl  opacity-90 lg:mr-44 ${
+          className={`animacion-left text-xl mt-10 md:mt-20 md:text-2xl  opacity-90 lg:mr-44 ${
             mode ? "text-white" : "text-zinc-900 "
           }`}
         >
-          Software engineer with 1 year of experience in {"  "}
+          Developer with 1 year of experience in {"  "}
           <span className="text-red-400 font-semibold">
-            Fullstack projects{" "}
+          software projects{" "}
           </span>
-          I like to create clear and functional solutions, applying good
-          programming practices. I am adaptable to new technologies and work in
-          a team, achieving objectives efficiently.
+          Specializes in developing efficient and scalable solutions, applying
+          good programming practices. Adaptable to new technologies and
+          teamwork, achieving objectives efficiently.
         </p>
       </div>
     </div>
