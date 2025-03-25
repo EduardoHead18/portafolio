@@ -34,7 +34,7 @@ export const NavbarApp = () => {
 
       {/**components that are rendered with the navbar-section of the page index (Landing page) (spa) */}
       {/**Here the margin x of the page is defined */}
-      <div className="mx-5 mt-5 sm:mx-5 md:mx-24 2xl:mx-96 ">
+      <div className="mx-5 mt-5 sm:mx-5 md:mx-24 2xl:mx-[100rem] ">
         <motion.div
           {...getAnimationProps(section1Ref, section1InView)}
           id="section-1"
